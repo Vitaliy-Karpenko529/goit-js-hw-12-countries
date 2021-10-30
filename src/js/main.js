@@ -6,11 +6,11 @@ import getRefs from '../js/refs';
 import '@pnotify/core/dist/PNotify.css';
 import '@pnotify/desktop/dist/PNotifyDesktop';
 import '@pnotify/core/dist/BrightTheme.css';
+import debounce from 'lodash.debounce';
 
 const refs = getRefs();
 refs.inputRef.addEventListener('input', debounce(onSearch, 500))
 
-const debounce = require('lodash.debounce')
 
 function onSearch() {
     if (!refs.inputRef.value) {
