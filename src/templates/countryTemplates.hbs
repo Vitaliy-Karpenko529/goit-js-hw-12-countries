@@ -1,7 +1,7 @@
 {{#each this}}
 <h1 class="title">{{name}}</h1>
 <div class="country-card-container">
-    <ul class="country-infi-list">
+    <ul class="country-info-list">
         <li class="country-info-list-item">
             <span class="country-info-list-item-title">Capital:</span> {{capital}}</li>
         <li class="country-info-list-item">
@@ -10,11 +10,11 @@
             <span class="country-info-list-item-title">Languages:</span>
             <ul>
                 {{#each languages}}
-                <li>{{name}}</li>
+                <li class="smol-name">{{name}}</li>
                 {{/each}}
             </ul>
         </li>
     </ul>
-    <img src="{{flag}}" alt="{{name}}">
+    <img src="{{flag}}" alt="{{name}}" class="image">
 </div>
 {{/each}}
